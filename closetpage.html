@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="closet">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/bim3vpd.css">
+	<title> CLOSET PAGE </title>
+</head>
+<body class="closetbody">
+
+<h1 class="closeth1"> keep clicking </h1>
+
+<div id="sharksticker">
+<a href="infopage.html" class="stickerButton"><img src="sharksticker.png"></a>
+</div>
+
+<!-- container -->
+
+<div>
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<div class="slideshow1">
+	<div class="mySlides fade">
+		<img class="yay" src="./img/brownbuttondown-(1).png">
+	</div>
+
+	<div class="mySlides fade">
+		<img class="yay" src="./img/graysweater-(1).png">
+	</div>
+
+	<div class="mySlides fade">
+		<img class="yay" src="./img/pinkbuttondown-(1).png">
+	</div>
+
+	<div class="mySlides fade">
+		<img class="yay" src="./img/starshirt-(1).png">
+	</div>
+
+	<div class="mySlides fade">
+		<img class="yay" src="./img/sweatervest-(1).png">
+	</div>
+
+	<a class="previous" onclick="plusSlides(-1)">&#10094;</a>	
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+
+<script type="text/javascript">
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	// controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// thumbnail controls
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+</script>
+
+
+
+</body>
+</html>

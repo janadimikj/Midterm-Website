@@ -1,0 +1,208 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* SPLASH PAGE */
+
+.splash {
+	background-image: url( 'webbackground1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+}
+
+h1 {
+	color: floralwhite;
+	font-family: "chantal", sans-serif;
+font-weight: 600;
+font-style: italic;
+font-size: 10em;
+text-align: center;
+line-height: 80%;
+}
+
+.header-index {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.stickerButton {
+/*	transition: 0.5s transform;*/
+}
+
+.stickerButton:hover {
+	transform: scale(1.2);
+
+}
+
+#mouth {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/* CLOSET PAGE */
+
+
+.closet {
+	background-image: url('closetbackground.jpg');
+	background-repeat: no-repeat;
+	background-size: 1550px;
+}
+
+.closeth1 {
+	text-align: left;
+	font-family: "chantal", sans-serif;
+font-weight: 600;
+font-style: italic;
+font-size: 3em;
+color: darkolivegreen;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+#sharksticker {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.mySlides {
+	display: none;
+}
+
+.previous, .next {
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.slideshow1 {
+	position: relative;
+	left: 97px;
+	top: -840px;
+	scale: 45%;
+}
+
+.dot {
+	margin: 5px;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+body {
+	overflow: hidden;
+}
+
+
+/*.dots label {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: solid white 3px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	margin: 5px;
+}*/
+
+/*.dots label:hover {background: white;}
+#img1:checked ~ .m1 {
+	margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+	margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+	margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+	margin-left: -300%;
+}
+
+#img5:checked ~ .m5 {
+	margin-left: -400%;
+}*/
+
+/*infopage*/
+
+.info {
+background-image: url( 'webbackground3.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.info-header {
+	color: floralwhite;
+	font-family: "chantal", sans-serif;
+font-weight: 600;
+font-style: italic;
+font-size: 10em;
+line-height: 120%;
+text-align: left;
+}
+
+.info-p {
+	color: floralwhite;
+	font-family: sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+line-height: 140%;
+
+}
+
+#starsticker:hover {
+	transform: scale(1.05);
+}
+
+#starsticker {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
