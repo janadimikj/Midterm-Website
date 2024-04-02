@@ -206,3 +206,61 @@ line-height: 140%;
 	right: 0px;
 	top: 0px;
 }
+
+/*MEDIA QUERY*/
+
+@media (max-width: 600px){
+	
+	h1 {
+		font-size: 5em;
+	}
+	
+	#mouth {
+		transform: scale(0.5)
+	}
+		
+	#sharksticker {
+		transform: scale(0.5);
+		display: flex;
+		flex-direction: column;
+	justify-content: flex-start;
+	}
+	
+	.closet {
+		background-image: url("closetbackground copy.jpg");
+	}
+	
+	.slideshow1 {
+	position: relative;
+	left: 97px;
+	top: -840px;
+	scale: 45%;
+		transform: scale(0.5);
+}
+	.info-header {
+		font-size: 5em;
+	}
+	
+	.info-p {
+		font-size: 1em;
+	}
+	
+	#starsticker {
+		transform: scale(0.5);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: fixed;
+		bottom: 0px;
+		top: 800px;
+		
+	}
+	
+	#starsticker:hover {
+		transform: scale(0.75);
+	}
+	
+	.info {
+		background-repeat: repeat-y;
+	}
+}
