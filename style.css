@@ -118,7 +118,7 @@ justify-content: flex-end;
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
-	margin: 0 2px;
+	margin: 2px;
 	background-color: white;
 	border-radius: 50%;
 	display: inline-block;
@@ -223,19 +223,22 @@ line-height: 140%;
 		transform: scale(0.5);
 		display: flex;
 		flex-direction: column;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	}
 	
 	.closet {
-		background-image: url("closetbackground copy.jpg");
+		background-image: url("querybackground.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	
 	.slideshow1 {
-	position: relative;
-	left: 97px;
-	top: -840px;
+	position: absolute;
+	right: 1000px;
+	left: 0px;
+	top: 100px;
 	scale: 45%;
-		transform: scale(0.5);
+	transform: scale(0.7);
 }
 	.info-header {
 		font-size: 5em;
